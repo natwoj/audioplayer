@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Player Audio</title>
+        <meta charset="UTF-8" >
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+            <audio id="player-audio">
+                    <source src="http://localhost/mp3/utwor-pierwszy.mp3" type="audio/mpeg">
+                        <source src="http://localhost/mp3/utwor-drugi.mp3" type="audio/mpeg">
+                            <source src="http://localhost/mp3/utwor-trzeci.mp3" type="audio/mpeg">
+                                <source src="http://localhost/mp3/utwor-czwarty.mp3" type="audio/mpeg">
+                                    <source src="http://localhost/mp3/utwor-piaty.mp3" type="audio/mpeg">
+                                        <source src="http://localhost/mp3/utwor-szosty.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+            </audio>
+            
+        <div class="main">
+            
+            <div class="left-content">
+                
+                <img src="images/photo.png" alt="left photo"/>
+                
+                <div class="progress-line">
+                    
+                    <div id="progress-bottom" class="progress-line-bottom">
+
+                    </div>
+                   
+                    <div id="progress-on"  class="progress-line-on-top">
+
+                    </div>
+                    
+                </div>
+                
+                <div class="controls">
+                    
+                    <div class="prev">
+                        <img src="images/prev.png" alt="prev" onclick="PlayPrevSong();" />
+                    </div>
+                    
+                    <div id="playButton" class="play-button-on">
+                            
+                        <img src="images/play-button.png" alt="play button" onclick="ChangePlayButtonToPauseButton();" />
+                        
+                    </div>
+                    <div id="pauseButton" class="pause-button-off">
+                        <img src="images/pause-button.png" alt="pause button" onclick="ChangePauseButtonToPlayButton();" />
+                    </div>
+                    
+                    <div class="next">
+                        <img src="images/next.png" alt="next" onclick="PlayNextSong();" />
+                    </div>
+                   
+                    <div id="muteButton" class="volume">
+                        <img id="mute-button" src="images/volume.png" alt="volume" onclick="Mute();" />
+                    </div>
+                    <div id="unMuteButton" class="volume-mute-off">
+                        <img id="un-mute-button" src="images/volume-mute.png" alt="volume mute" onclick="UnMute();" />
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+            </div>
+            
+            <div class="right-content-titles">
+                
+                <ul>
+                    <li><a id="song-0" href="#">01.Indian - Nina chay, samba chay</a></li>
+                    <li><a id="song-1" href="#">02.Indian - Pata pata</a></li>
+                    <li><a id="song-2" href="#">03.Indian - Ponchito</a></li>
+                    <li><a id="song-3" href="#">04.Indian - Peguche</a></li>
+                    <li><a id="song-4" href="#">05.Indian - Mantis</a></li>
+                    <li><a id="song-5" href="#">06.Indian - Lucila</a></li>
+                </ul>
+            </div>
+           
+            <div class="right-content-times">
+                <ul>
+                    <li id="time-0">3:38</li>
+                    <li id="time-1">4:28</li>
+                    <li id="time-2">3:21</li>
+                    <li id="time-3">3:46</li>
+                    <li id="time-4">3:21</li>
+                    <li id="time-5">3:37</li>
+                </ul>
+            </div>
+           
+            <div class="right-content-scroll">
+                <div class="scroll-bottom"></div>
+                <div class="scroll-on-top"></div>
+            </div>
+           
+            <div class="social-media-content">
+                    <img class="img-fb-style" src="images/facebook.png" alt="facebook"/>    
+                    <img class="img-sc-style" src="images/soundcloud.png" alt="soundcloud"/>
+                    <img class="img-tw-style" src="images/twitter.png" alt="twitter"/>
+            </div>
+           
+            <div class="clear"></div>
+
+
+        </div>
+       
+        <script src="js/player.js"></script>
+
+        
+    </body>
+</html>
