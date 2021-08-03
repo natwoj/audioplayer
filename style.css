@@ -4,8 +4,9 @@
     min-height: 400px;
     margin: auto;
     padding-bottom: 20px;
-    border-radius: 40px;
-    background-color: #232332;
+    border-radius: 30px;
+    background: rgb(64,38,8);
+    background: linear-gradient(154deg, rgba(64,38,8,1) 0%, rgba(228,167,94,1) 100%);
     margin-top: 20px;
 }
 .left-content {
