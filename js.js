@@ -19,6 +19,8 @@ var time3 = document.getElementById("time-3");
 var time4 = document.getElementById("time-4");
 var time5 = document.getElementById("time-5");
 
+var songTable = ["/mp/utwor-pierwszy.mp3","/mp/utwor-drugi.mp3","/mp/utwor-trzeci.mp3","/mp/utwor-czwarty.mp3","/mp/utwor-piąty.mp3", "/mp/utwor-szosty.mp3"]
+
 function ChangePlayToPauseButton () {
     playButton.classList.remove("play-button-on");
     playButton.classList.add("play-button-off");
@@ -58,4 +60,9 @@ function songProgress {
             progress.style.width = resTime; 
         }
     }
+}
+
+function PlayerFirstSong {
+
+    
 }
