@@ -12,6 +12,12 @@ var song3 = document.getElementById("song-3");
 var song4 = document.getElementById("song-4");
 var song5 = document.getElementById("song-5");
 
+var time0 = document.getElementById("time-0");
+var time1 = document.getElementById("time-1");
+var time2 = document.getElementById("time-2");
+var time3 = document.getElementById("time-3");
+var time4 = document.getElementById("time-4");
+var time5 = document.getElementById("time-5");
 
 function ChangePlayToPauseButton () {
     playButton.classList.remove("play-button-on");
