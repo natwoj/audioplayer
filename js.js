@@ -79,6 +79,12 @@ function PlayerFirstSong {
     time4.classList.add("time4");
     time5.classList.add("time5");
 
+    playButton.classList.remove("play-button-on");
+    playButton.classList.add("play-button-off");
 
-    
+    pauseButton.classList.remove("pause-button-off");
+    pauseButton.classList.add("pause-button-on");
+
+    playerAudio.play();
+    songProgress();
 }
