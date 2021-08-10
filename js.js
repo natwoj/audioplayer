@@ -67,4 +67,18 @@ function PlayerFirstSong {
     playerAudio.src =  songTable[0];
     song0.classList.add("brown-title-song-0");
     song1.classList.remove("brown-title-song-1");
+    song2.classList.remove("brown-title-song-2");
+    song3.classList.remove("brown-title-song-3");
+    song4.classList.remove("brown-title-song-4");
+    song5.classList.remove("brown-title-song-5");
+
+    time0.classList.add("time0");
+    time1.classList.remove("time1");
+    time2.classList.add("time2");
+    time3.classList.add("time3");
+    time4.classList.add("time4");
+    time5.classList.add("time5");
+
+
+    
 }
