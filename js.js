@@ -63,6 +63,8 @@ function songProgress {
 }
 
 function PlayerFirstSong {
-
-    
+ i = 0;
+    playerAudio.src =  songTable[0];
+    song0.classList.add("brown-title-song-0");
+    song1.classList.remove("brown-title-song-1");
 }
