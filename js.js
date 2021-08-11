@@ -115,3 +115,32 @@ function PlayerSecondSong {
        playerAudio.play();
        songProgress();
    }
+
+   function PlayerThirdSong {
+    i = 2;
+       playerAudio.src =  songTable[2];
+       song2.classList.add("brown-title-song-2");
+       song0.classList.remove("brown-title-song-0");
+       song1.classList.remove("brown-title-song-1");
+       song3.classList.remove("brown-title-song-3");
+       song4.classList.remove("brown-title-song-4");
+       song5.classList.remove("brown-title-song-5");
+   
+       time2.classList.add("time2");
+       time0.classList.remove("time0");
+       time1.classList.add("time1");
+       time3.classList.add("time3");
+       time4.classList.add("time4");
+       time5.classList.add("time5");
+   
+       playButton.classList.remove("play-button-on");
+       playButton.classList.add("play-button-off");
+   
+       pauseButton.classList.remove("pause-button-off");
+       pauseButton.classList.add("pause-button-on");
+   
+       playerAudio.play();
+       songProgress();
+   }
+
+   
