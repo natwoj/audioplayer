@@ -301,14 +301,12 @@ function Mute() {
     playerAudio.muted = true;
 }
 
-function UnMute () {
+function UnMute() {
     muteButton.classList.add("volume");
     muteButton.classList.remove("volume-off");
     unMuteButton.classList.add("volume-mute-off");
     unMuteButton.classList.remove("volume-mute-on");
 
     playerAudio.muted = false;
-
-
 
 }
