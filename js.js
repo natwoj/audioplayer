@@ -1,3 +1,5 @@
+const { func } = require("prop-types");
+
 var playButton = document.getElementById("playButton");
 var pauseButton = document.getElementById("pauseButton");
 var playerAudio = document.getElementById("player-audio");
@@ -20,6 +22,10 @@ var time4 = document.getElementById("time-4");
 var time5 = document.getElementById("time-5");
 
 var songTable = ["/mp/utwor-pierwszy.mp3","/mp/utwor-drugi.mp3","/mp/utwor-trzeci.mp3","/mp/utwor-czwarty.mp3","/mp/utwor-piąty.mp3", "/mp/utwor-szosty.mp3"]
+
+var muteButton = document.getElementById("muteButton");
+var unMuteButton = document.getElementById("unMuteButton");
+
 
 function ChangePlayToPauseButton () {
     playButton.classList.remove("play-button-on");
@@ -286,7 +292,10 @@ function PlayerSecondSong {
         }
     }
 
+function mute() {
+    muteButton.classList.remove("volume");
+    muteButton.classList.add("volume-off");
+    unMuteButton.classList.remove("volume--mute-off");
+    unMuteButton.classList.add("volume-mute-on");
 
-
-
-   }
+}
