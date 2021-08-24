@@ -255,3 +255,38 @@ function PlayerSecondSong {
            }
        }
    }
+
+   function PlayPrevSong() {
+    --i;
+    if (i==0) {
+        PlayerFirstSong();
+        else if (i==1) {
+            PlayerSecondSong();
+        }
+         else if (i==2) {
+             PlayerThirdSong();
+         }
+         else if (i==3) {
+             PlayerFourthSong();
+         }
+         else if (i==4) {
+             PlayerFifthSong();
+         }
+         else if (i==5) {
+             PlayerSixthSong();
+         }
+         else if (i>=6) {
+             i=0;
+             PlayerFirstSong();
+         }
+         else if (i<0) {
+             i=5;
+             PlayerSixthSong();
+         }
+        }
+    }
+
+
+
+
+   }
