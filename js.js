@@ -292,10 +292,23 @@ function PlayerSecondSong {
         }
     }
 
-function mute() {
+function Mute() {
     muteButton.classList.remove("volume");
     muteButton.classList.add("volume-off");
-    unMuteButton.classList.remove("volume--mute-off");
+    unMuteButton.classList.remove("volume-mute-off");
     unMuteButton.classList.add("volume-mute-on");
+
+    playerAudio.muted = true;
+}
+
+function UnMute () {
+    muteButton.classList.add("volume");
+    muteButton.classList.remove("volume-off");
+    unMuteButton.classList.add("volume-mute-off");
+    unMuteButton.classList.remove("volume-mute-on");
+
+    playerAudio.muted = false;
+
+
 
 }
