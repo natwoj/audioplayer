@@ -5,8 +5,8 @@
     margin: auto;
     padding-bottom: 20px;
     border-radius: 30px;
-    background: rgb(64,38,8);
-    background: linear-gradient(154deg, rgba(64,38,8,1) 0%, rgba(228,167,94,1) 100%);
+    background: rgb(97,232,245);
+background: linear-gradient(45deg, rgba(97,232,245,1) 0%, rgba(125,162,160,1) 64%);
     margin-top: 20px;
 }
 .left-content {
